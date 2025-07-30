@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="MailApp">
+  <Id>450928a7-f48d-427a-a054-44d5abf748b4</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Tanida Sample</ProviderName>
+  <DefaultLocale>ja-JP</DefaultLocale>
+  <DisplayName DefaultValue="宛先チェックサンプル" />
+  <Description DefaultValue="送信前の宛先チェックを補助するサンプルアドイン" />
+  <IconUrl DefaultValue="https://niwatch0811.github.io/outlook-addon20250730/icon-32.png" />
+  <SupportUrl DefaultValue="https://tanida.co.jp" />
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.8" />
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemCompose">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://niwatch0811.github.io/outlook-addon20250730/taskpane.html" />
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+</OfficeApp>
